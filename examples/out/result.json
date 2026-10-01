@@ -1,0 +1,63 @@
+{
+  "winner": "Alice",
+  "rounds_count": 2,
+  "valid_ballots": 5,
+  "invalid_ballots": 3,
+  "total_valid_weight": 105,
+  "invalid_ballot_details": [
+    {
+      "index": 5,
+      "reason": "引用未知候选 \"Dave\""
+    },
+    {
+      "index": 6,
+      "reason": "重复列出候选 \"Bob\""
+    },
+    {
+      "index": 7,
+      "reason": "权重非法: 不是正整数"
+    }
+  ],
+  "rounds": [
+    {
+      "round": 1,
+      "remaining_candidates": [
+        "Alice",
+        "Bob",
+        "Carol"
+      ],
+      "tallies": {
+        "Alice": 40,
+        "Bob": 30,
+        "Carol": 30
+      },
+      "non_exhausted_weight": 100,
+      "exhausted_weight_cumulative": 5,
+      "eliminated": "Carol",
+      "transfers": {
+        "round": 1,
+        "eliminated": "Carol",
+        "eliminated_votes": 30,
+        "to_candidates": {
+          "Alice": 20,
+          "Bob": 0
+        },
+        "to_exhausted": 10
+      }
+    },
+    {
+      "round": 2,
+      "remaining_candidates": [
+        "Alice",
+        "Bob"
+      ],
+      "tallies": {
+        "Alice": 60,
+        "Bob": 30
+      },
+      "non_exhausted_weight": 90,
+      "exhausted_weight_cumulative": 15,
+      "winner": "Alice"
+    }
+  ]
+}
