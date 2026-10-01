@@ -1,0 +1,12 @@
+{
+  "candidates": ["alice", "bob", "carol"],
+  "ballots": [
+    {"weight": 5, "ranking": ["alice"]},
+    {"weight": 4, "ranking": ["bob", "carol"]},
+    {"weight": 2, "ranking": ["carol"]},
+    {"weight": 1, "ranking": []},
+    {"weight": 3, "ranking": ["carol", "carol"]},
+    {"weight": 0, "ranking": ["alice"]},
+    {"weight": 2, "ranking": ["dave"]}
+  ]
+}

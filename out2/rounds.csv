@@ -1,0 +1,7 @@
+round,candidate,votes,active_weight,exhausted_weight,eliminated,transfer_to,transfer_weight,elected
+1,alice,5,11,1,carol,,,
+1,bob,4,11,1,carol,,,
+1,carol,2,11,1,carol,,,
+1,,,11,1,carol,EXHAUSTED,2,
+2,alice,5,9,3,,,,alice
+2,bob,4,9,3,,,,alice

@@ -1,0 +1,52 @@
+{
+  "candidates": [
+    "alice",
+    "bob",
+    "carol"
+  ],
+  "valid_ballots": 4,
+  "invalid_ballots": 3,
+  "rejected": [
+    {
+      "index": 4,
+      "reason": "重复排列候选 \"carol\""
+    },
+    {
+      "index": 5,
+      "reason": "权重缺失或不是正整数"
+    },
+    {
+      "index": 6,
+      "reason": "引用未知候选 \"dave\""
+    }
+  ],
+  "total_valid_weight": 12,
+  "elected": true,
+  "winner": "alice",
+  "rounds": [
+    {
+      "round": 1,
+      "tallies": {
+        "alice": 5,
+        "bob": 4,
+        "carol": 2
+      },
+      "active_weight": 11,
+      "exhausted_weight": 1,
+      "eliminated": "carol",
+      "transfers": {
+        "EXHAUSTED": 2
+      }
+    },
+    {
+      "round": 2,
+      "tallies": {
+        "alice": 5,
+        "bob": 4
+      },
+      "active_weight": 9,
+      "exhausted_weight": 3,
+      "elected": "alice"
+    }
+  ]
+}
